@@ -6,6 +6,7 @@ a {
 
 a:hover {
     color: #444444;
+    text-decoration: underline;
 }
 
 /** Borders around forms **/
@@ -32,6 +33,15 @@ a:hover {
 
 .block .header {
     background-color: #E6E6E6;
+}
+
+.block .content a {
+    color: #0000ff;
+}
+
+.block .content a:hover {
+    color: #444444;
+    text-decoration: underline;
 }
 
 .calendartable .weekdays {
@@ -173,4 +183,5 @@ a:hover {
 
 .navbar a:hover {
     color: #444444;
+    text-decoration: underline;
 }
