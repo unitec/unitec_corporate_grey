@@ -14,6 +14,9 @@ this theme fully compatible with all versions
 of Moodle 2.
 
 ********** Updates ***********
+24/07/12
+- All links back to blue.
+
 03/07/12
 - Readme update.
 

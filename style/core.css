@@ -1,7 +1,11 @@
 /******** Core ********/
 a {
-    color: #444444;
+    color: #0000ff;
     text-decoration: none;
+}
+
+a:hover {
+    color: #444444;
 }
 
 /** Borders around forms **/
@@ -148,6 +152,7 @@ a {
 
 .forumpost .header a {
     color: #FFFFFF;
+    text-decoration: underline;
 }
 
 /** Assignments **/
@@ -163,9 +168,9 @@ a {
 }
 
 .navbar a {
-    color: #444444;
+    color: #0000ff;
 }
 
 .navbar a:hover {
-    color: #999999;
+    color: #444444;
 }
