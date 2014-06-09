@@ -17,15 +17,30 @@
 /**
  * Unitec Grey theme
  *
- * @package    theme_unitec_corporate_grey
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package   theme_unitec_corporate_grey
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-defined('MOODLE_INTERNAL') || die;
+$THEME->name = 'unitec_corporate_grey';
 
-$plugin->version   = 2014060900;
-$plugin->requires  = 2013050100;
-$plugin->component = 'theme_unitec_corporate_grey';
-$plugin->dependencies = array(
-    'theme_bootstrapbase'  => 2013050100,
+$THEME->doctype = 'html5';
+$THEME->parents = array('bootstrapbase');
+$THEME->sheets = array('ours','custom');
+$THEME->supportscssoptimisation = false;
+$THEME->yuicssmodules = array();
+
+$THEME->editor_sheets = array();
+
+$THEME->plugins_exclude_sheets = array(
+    'gradereport' => array(
+        'grader',
+    ),
+);
+
+$THEME->rendererfactory = 'theme_overridden_renderer_factory';
+$THEME->csspostprocess = 'theme_unitec_corporate_grey_process_css';
+
+$THEME->blockrtlmanipulations = array(
+    'side-pre' => 'side-post',
+    'side-post' => 'side-pre'
 );
